@@ -10,12 +10,12 @@ const navigate=useNavigate();
     await logout();
     navigate("/login"); // Redirect to login page after logout
   } catch (error) {
-    console.error("Error logging out:", error);
+    console.error("OOps Error logging out:", error);
   }
 };
 
   return (
-    <div className=' py-10'>
+    <div className='py-10'>
         <nav class=" fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     
