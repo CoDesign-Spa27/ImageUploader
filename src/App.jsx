@@ -14,7 +14,7 @@ function App() {
     <AuthProvider>
       <Router>
         <Routes>
-          <Route path="/" element={<PrivateRoute>
+          <Route index path="/" element={<PrivateRoute>
             <Home />
           </PrivateRoute> } />
           <Route path="/login" element={ <Redirect>  <Login /> </Redirect>} />
