@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { getRecipeById } from "../services/recipeService";
-import noImage from '../../public/no-image.jpeg'
+import noImage from '/no-image.jpeg'
 const RecipeDetail = () => {
   const { id } = useParams();
   const [recipe, setRecipe] = useState(null);

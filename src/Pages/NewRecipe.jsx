@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { addRecipe } from "../services/recipeService";
 import ImageUpload from "../Components/ImageUpload";
-import HomeButton from "../Components/HomeButton";
-
+import { Link } from "react-router-dom";
 const NewRecipe = () => {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -25,7 +24,10 @@ const NewRecipe = () => {
 
   return (
     <div className="min-h-screen py-8 px-4 sm:px-6 lg:px-8">
-    <HomeButton />
+      <Link to={'/'}>
+   <button className="bg-white text-black hover:bg-gray-400">Go Back</button>
+      
+      </Link>
     <form onSubmit={handleSubmit} className="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
       <h2 className="text-3xl font-bold mb-6 text-center text-gray-800">Add New Recipe</h2>
       
