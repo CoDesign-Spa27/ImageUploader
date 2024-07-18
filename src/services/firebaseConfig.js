@@ -5,6 +5,7 @@ import { getStorage } from "firebase/storage";
 const firebaseConfig = {
     apiKey: "AIzaSyBWlqW1RFN6u7s8N6ca_gQ2uTInKZ9Sed0",
     authDomain: "imageuploader-76d09.firebaseapp.com",
+    databaseURL: "https://imageuploader-76d09-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "imageuploader-76d09",
     storageBucket: "imageuploader-76d09.appspot.com",
     messagingSenderId: "609740659466",
